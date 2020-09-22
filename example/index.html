@@ -1,0 +1,16 @@
+<ul id="list">
+</ul>
+<script>
+  /**
+ *  for of lặp các key có trong mảng(array)
+ */
+var students=[
+  { name: 'Long', age:18},
+  { name: 'Mi', age: 17}
+];
+var content='';
+for(var student of students){
+  content+='<li>'+student.name+'</li>';
+}
+document.getElementById("list").innerHTML= content;
+  </script>
